@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="card">
+        <div class="card-header">
+            <h3>{{ applicant.portfolio.full_name }}'s Portfolio</h3>
+        </div>
+        <div class="card-body">
+            <p><strong>Email:</strong> {{ applicant.portfolio.email }}</p>
+            <p><strong>Phone:</strong> {{ applicant.portfolio.phone_number }}</p>
+            <p><strong>Address:</strong> {{ applicant.portfolio.full_address }}</p>
+            
+            <hr>
+            <h4>About Me</h4>
+            <p>{{ applicant.portfolio.about_me }}</p>
+
+            <hr>
+            <h4>Skills</h4>
+            <p>{{ applicant.portfolio.skills }}</p>
+        </div>
+    </div>
+
+    <h3 class="mt-5">Projects</h3>
+    <hr>
+    <div class="row">
+        {% for project in applicant.portfolio.project_set.all %}
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ project.title }}</h5>
+                        <p class="card-text">{{ project.description }}</p>
+                        {% if project.url %}
+                            <a href="{{ project.url }}" class="btn btn-secondary" target="_blank">View Project</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <p class="text-muted">This applicant has not added any projects yet.</p>
+        {% endfor %}
+    </div>
+
+    <a href="{% url 'applicant_list' %}" class="btn btn-light mt-3">← Back to List</a>
+{% endblock %}
