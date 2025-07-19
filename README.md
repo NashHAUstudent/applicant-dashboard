@@ -50,13 +50,13 @@ Create Portfolios and link them to Users.
 Add Projects and assign them to Portfolios.
 
 Dashboard List View (Homepage):
-http://127.0.0.1:8000/ – Shows list of all applicants.
+htt*p://127.0.0.1:8000/ – Shows list of all applicants.
 
 Applicant Detail View:
-http://127.0.0.1:8000/portfolio/<username>/ – View detailed portfolio.
+htt*p://127.0.0.1:8000/portfolio/<username>/ – View detailed portfolio.
 
 Delete Applicant:
-http://127.0.0.1:8000/portfolio/<username>/delete/ – Delete user and related data.
+htt*p://127.0.0.1:8000/portfolio/<username>/delete/ – Delete user and related data.
 
 💡 Notes
 ✅ Bootstrap is self-hosted under /static/bootstrap/.
