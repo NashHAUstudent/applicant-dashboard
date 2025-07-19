@@ -38,8 +38,12 @@ my_applicant_dashboard/
 └── venv/                 (Python virtual environment - excluded from Git)
 
 
+ How to Use
 
-📌 How to Use
+ADmin pass i used
+Login: Admin
+Pass: 20993591
+
 Admin Panel:
 Visit /admin and log in using your superuser credentials.
 
@@ -59,30 +63,30 @@ Delete Applicant:
 htt*p://127.0.0.1:8000/portfolio/<username>/delete/ – Delete user and related data.
 
 💡 Notes
-✅ Bootstrap is self-hosted under /static/bootstrap/.
+ Bootstrap is self-hosted under /static/bootstrap/.
 
-✅ Job Position (Junior Developer) is hardcoded in the dashboard.
+ Job Position (Junior Developer) is hardcoded in the dashboard.
 
-✅ Uses Django’s built-in User model with Portfolio and Project relations.
+ Uses Django’s built-in User model with Portfolio and Project relations.
 
-✅ Clean commit messages used (feat:, fix:, wip:).
+ Clean commit messages used (feat:, fix:, wip:).
 
-📝 Commit Convention
+ Commit Convention
 Prefix	Meaning
 feat:	New feature implemented
 wip:	Work in progress
 fix:	Fixes to existing feature
 bug:	Feature has a bug
 
-⚠️ .gitignore
+⚠.gitignore
 The project uses a .gitignore file that excludes:
 
 venv/ (Virtual Environment)
 
 db.sqlite3 (Database file)
 
-📄 License
+ License
 This project is for educational purposes only.
 
-🔗 Project Link
+ Project Link
 GitHub Repository: https://github.com/NashHAUstudent/applicant-dashboard
